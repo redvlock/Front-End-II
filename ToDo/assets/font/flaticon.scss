@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6f91c9f2e5d42abeffaf44bd66cc3621") format("truetype"),
+url("./flaticon.woff?6f91c9f2e5d42abeffaf44bd66cc3621") format("woff"),
+url("./flaticon.woff2?6f91c9f2e5d42abeffaf44bd66cc3621") format("woff2"),
+url("./flaticon.eot?6f91c9f2e5d42abeffaf44bd66cc3621#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6f91c9f2e5d42abeffaf44bd66cc3621#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cancel": "\f101",
+    "clock": "\f102",
+    "delete": "\f103",
+    "floppy-disk": "\f104",
+    "floppy-disk-1": "\f105",
+    "check-mark": "\f106",
+);
+
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-delete:before {
+    content: map-get($flaticon-map, "delete");
+}
+.flaticon-floppy-disk:before {
+    content: map-get($flaticon-map, "floppy-disk");
+}
+.flaticon-floppy-disk-1:before {
+    content: map-get($flaticon-map, "floppy-disk-1");
+}
+.flaticon-check-mark:before {
+    content: map-get($flaticon-map, "check-mark");
+}

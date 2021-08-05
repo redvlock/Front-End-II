@@ -1,0 +1,967 @@
+@import "mixin";
+// @import "./FontAwesome/scss/fontawesome.scss";
+// @import "./FontAwesome/scss/solid.scss";
+
+body#tasksPage{
+    all: initial;
+    background-color: #F6F6F6;
+    filter: contrast(1);
+    min-height: 100vh;
+    min-width: 100vw;
+    header {
+        display: flex;
+        background: linear-gradient(90deg, $primary, $secondary);
+        box-shadow: 0px 3px 5px lightgrey;
+        padding: 0 3em;
+        margin-bottom: 2em;
+        font-size: 1vw;
+        i.mobileMenu{
+            display: none;
+        }
+        nav{
+            a {
+                display: block;
+                width: fit-content;
+                padding: .7em 1em;
+                border-bottom: .2em solid white;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        div.user-info {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+
+            div.userData{
+                display: flex;
+                align-items: center;
+                position: relative;
+                p {
+                    font-size: 1vw;
+                    text-transform: capitalize;
+                    color: rgb(223, 223, 223);
+                }
+                
+                i{
+                    color: white;
+                    margin-left: 0.25vw;
+                    margin-bottom: 0.3vw;
+                }
+
+                div.user-image {
+                    height: 2em;
+                    width: 2em;
+                    border-radius: 50%;
+                    background-color: white;
+                    opacity: .3;
+                    margin-left: 0.7em;
+                    img{
+                        height: 2em;
+                        width: 2em;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+            }
+
+            div.drop-down-menu{
+                display: none;
+                position: absolute;
+                right: 5vw;
+                background-color: $app-grey;
+                border-radius: 5%;
+                z-index: 1000;
+                border: solid 0.1vw $secondary;
+                width: 10vw;
+
+                div.image{
+                    display: none;
+                }
+
+                div.notch{
+                    width: 0.6vw;
+                    height: 0.6vw;
+                    position: absolute;
+                    transform: rotate(45deg);
+                    right: 0.5vw;
+                    top: -0.45vw;
+                    background-color: $app-grey;
+                    border-top: solid 0.1vw $secondary;
+                    border-left: solid 0.1vw $secondary;
+                }
+
+                ul{
+                    border-radius: 5%;
+                    padding: 0.5vw 1vw;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5vw;
+                        cursor: pointer;
+                        a{
+                            font-size: 0.9vw;
+                            font-family: "Roboto";
+                            text-decoration: none;
+                            color: black;
+                        }
+                        i{
+                            display: block;
+                            font-size: 1.3vw;
+                            color: $secondary;
+                            align-self: center;
+                        }
+                    }
+                    hr{
+                        background: $secondary;
+                        height: 0.05vw;
+                        width: 100%;
+                        margin: 0.5vw 0vw;                        
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        all: initial;
+        position:relative;
+        section.boardTasks{
+            all: initial;
+            form.nueva-tarea {
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                width: 80%;
+                margin: 0 10% 0 10%;
+                padding: 1em;
+                box-shadow: 2px 2px 10px lightgrey;
+                border-radius: .2em;
+                z-index: 20;
+                
+                input[type=text] {
+                    border: none;
+                    flex: 1;
+                    border-bottom: 1px solid lightgrey;
+                    border-radius: 0;
+                    padding: .3em;
+                    font-size: 1.1em;
+                }
+                
+                input:focus {
+                    outline: none;
+                    border-bottom: 1px solid grey;
+                }
+                
+                input::placeholder {
+                    color: rgb(197, 197, 197);
+                    text-indent: .2em;
+                }
+        
+                label.dataPicker, label.timePickerWarnMe{
+                    position: relative;
+                    width: 2em;
+                    height: 2em;
+                    margin-left: 1em;
+        
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        font-size: 2em;
+                        opacity: 0.6;
+                    }
+                    i.warnme{
+                        font-size: 1.8em;
+                        opacity: 0.4;
+                    }
+                    input[type=datetime-local]{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                    }
+                    input[type=datetime-local]::-webkit-calendar-picker-indicator {
+                        position: absolute;
+                        left: 0;
+                        top: 0vw;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+                }
+                
+                label.timePickerWarnMe{
+                    width: 1.8em;
+                    height: 1.8em;
+                    display: none;
+                }
+        
+                span{
+                    &.deadline, &.warnline{
+                        display: none;
+                        margin-left: 0.5em;
+                    }
+                    &.warnline{
+                        margin-left: 0.3em;
+                    }
+                }
+                
+                button {
+                    height: 2em;
+                    width: 2em;
+                    background-color: transparent;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    opacity: .5;
+                }
+                
+                button:hover {
+                    opacity: 1;
+                }
+                
+                button img {
+                    height: 100%;
+                    width: 100%;
+                }
+                .not-done {
+                    width: 2em;
+                    height: 2em;
+                    background-color: $app-grey;
+                    margin-right: 1em;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                div.sortAndFilter{
+                    position: absolute;
+                    bottom: -1.35vw;
+                    right: 7vw;
+                    i.filter, i.sort{
+                        font-size:0.8vw;
+                        color: $secondary;
+                        margin-left: 0.3vw;
+                        cursor: pointer;
+                    }
+                    i.sort{
+                        div{
+                            display: none;
+                            @include listSortFilter;
+                            top: -0.5vw;
+                            right: -5.25vw;
+                        }
+                    }
+                    i.filter{
+                        div{
+                            display: none;
+                            @include listSortFilter;
+                            top: -0.5vw;
+                            right: -4.5vw;
+                        }
+                    }
+                }
+            }
+
+            ul.tareas-pendientes {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                list-style: none;
+                margin: 2em 15% 2em 15%;
+        
+                li.tarea {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5em;
+        
+                    div.not-done {
+                    position: relative;
+                    height: 1.5em;
+                    width: 1.5em;
+                    background-color: white;
+                    box-shadow: 2px 2px 5px lightgrey;
+                    margin-right: 1em;
+                    border: 2px solid $secondary;
+                    border-radius: 50%;
+                    z-index: 2;
+                    transition: background-color 200ms linear;
+                    cursor: pointer;
+                    }
+        
+                    div.not-done{
+                        // @extend %fa-icon;
+                        // @extend .fas;
+                        
+                        & i{
+                            // content: fa-content($fa-var-check);
+                            position: absolute;
+                            left: 0.25em;
+                            top: 0.3em;
+                            color: white;
+                        }
+                    }
+                
+                    &:first-child div.not-done::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 100%;
+                        left: calc(0.75em - 1px);
+                        display: block;
+                        height: 4em;
+                        width: 2px;
+                        background-color: $secondary;
+                        }
+                
+                    &:not(:last-child) div.not-done::after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: calc(0.75em - 1px);
+                        display: block;
+                        height: 4.5em;
+                        width: 2px;
+                        background-color: $secondary;
+                        }
+        
+                    div.descripcion {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex: 1;
+                    background-color: white;
+                    padding: 1em 2em;
+                    box-shadow: 2px 2px 5px lightgrey;
+                    transition: background-color 0.3s linear;
+                    cursor: pointer;
+                    }
+        
+                    // // MOUSEOVER BODY DIV TASK
+                    // div.descripcion:hover{
+                    //     background-color: rgba(142, 100, 197,0.9);
+                    // }
+                    // div.descripcion:hover p{
+                    //     color: white;
+                    //     font-weight: 700;
+                    // }
+                    // div.descripcion:hover p.timestamp {
+                    //     color: black;
+                    //     font-weight: initial;
+                    // }
+                    
+                    // // MOUSEOVER CIRCLE
+                    // div.not-done:hover ~ div.descripcion{
+                    //     background-color: rgba(142, 100, 197,0.9);
+                    // }
+                    // div.not-done:hover ~ div.descripcion p{
+                    //     color: white;
+                    //     font-weight: 700;
+                    // }
+                    // div.not-done:hover ~ div.descripcion p.timestamp{
+                    //     color: black;
+                    //     font-weight: initial;
+                    // }
+        
+        
+                    p.nombre {
+                    color: rgb(95, 95, 95);
+                    margin-bottom: 0.2vw;
+                    }
+        
+                    p.timestamp {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3vw;
+                    font-size: .9em;
+                    color: rgb(134, 134, 134);
+                    i.remainingTimeL{
+                        font-size: 1vw;    
+                    }
+                    }
+                }
+            }
+        
+            h2.titulo-terminadas {
+                position: relative;
+                width: 8em;
+                text-align: center;
+                padding: .5em 1em;
+                background-color: white;
+                border-radius: .2em;
+                box-shadow: 3px 3px 5px lightgrey;
+                color: rgb(170, 170, 170);
+                font-weight: 400;
+                font-size: 1.1em;
+                margin-left: calc(15% - 4em);
+                z-index: 20;
+            }
+        
+            ul.tareas-terminadas {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                list-style: none;
+                margin: 2em 15%;
+        
+                li.tarea {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1.5em;
+            
+                        div.not-done {
+                        position: relative;
+                        height: 1.5em;
+                        width: 1.5em;
+                        box-shadow: 2px 2px 5px lightgrey;
+                        border: 2px solid $secondary;
+                        border-radius: 50%;
+                        margin-right: 1em;
+                        z-index: 2;
+                        transition: background-color 200ms linear;
+                        background-color: lightgrey;
+                        border-color: grey;
+                        cursor: pointer;
+                        & i{
+                            display: none;
+                            position: absolute;
+                            left: 0.25em;
+                            top: 0.3em;
+                            color: grey;
+                            transform: rotate(270deg);
+                        }
+                        }
+                        div.not-done::before{
+                            background-color: grey !important;
+                        }
+                        div.not-done::after{
+                            background-color: grey !important;
+                        }
+                        &:first-child div.not-done::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 100%;
+                            left: calc(0.75em - 1px);
+                            display: block;
+                            height: 3em;
+                            width: 2px;
+                            background-color: grey !important;
+                            }
+                    
+                        &:not(:last-child) div.not-done::after {
+                            content: '';
+                            position: absolute;
+                            top: 100%;
+                            left: calc(0.75em - 1px);
+                            display: block;
+                            height: 4.5em;
+                            width: 2px;
+                            background-color: grey !important;
+                            }
+            
+                        div.descripcion {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgb(228, 228, 228);
+                        flex: 1;
+                        padding: 1em 2em;
+                        box-shadow: 2px 2px 5px lightgrey;
+                        color: grey;
+                        
+                        div{
+                            display: flex;
+                            align-items: center;
+                            gap: 1vw;
+                            p.nombre {
+                                color: rgb(95, 95, 95);
+                                text-decoration: line-through;
+                                font-size: 0.9vw;
+                                }
+                            i.trashDoneTask{
+                                display: none;
+                                font-size: 0.8vw;
+                                cursor: pointer;
+                            }
+                        }
+                        }
+            
+                        p.timestamp {
+                        font-size: .9em;
+                        color: rgb(134, 134, 134);
+                        text-decoration: line-through;
+                        }
+                    }
+            }
+        }
+ 
+        section.menuTask{
+            div.menuTask{
+                @include form(1.5vw, 3vw);
+                padding-bottom: 1vw;
+                gap: 2vw;
+                display: none;
+                position: absolute;
+                width: 25vw;
+                top: 10vw;
+
+                i.option{
+                    color: $primary;
+                    position: absolute;
+                    font-size: 1.5vw;
+                    cursor: pointer;
+                    &.close{
+                        top: 0.5vw;
+                        right: 1vw;
+                        font-size: 1.2vw;
+                    }
+                    &.trash{
+                        bottom: 0.5vw;
+                        left: 1vw;
+                    }
+                    &.save{
+                        bottom: 0.5vw;
+                        left: 3vw;
+                        font-size: 1.4vw;
+                    }
+                    &.saved{
+                        display: none;
+                        color: rgb(1, 255, 1);
+                    }
+                }
+                i.option:hover{
+                    color: black;
+                    transform: scale(1.1);
+                }
+                i.saved:hover{
+                    color: rgb(1, 255, 1);
+                    transform: scale(1)
+                }
+                
+                h2{
+                    @include titleToDo;
+                    margin-bottom: -1vw;
+                }
+                
+                div.taskTitle{
+                    display: flex;
+                    align-items: center;
+                    div.not-done{
+                        @include circleTask(1.5em);
+                    }
+                    div.not-done:hover {
+                        background-color: $secondary;
+                    }
+                    p{
+                        font-size: 1.5vw;
+                        cursor: pointer;
+                    }
+                    input{
+                        display: none;
+                        @include formInput;
+                    }
+                    input:focus {
+                        outline: none;
+                        border: 1px solid lightgrey;
+                    }
+                }
+
+                div.taskDeadline, div.taskWarnDate{
+                    justify-self: flex-start;
+                    width: 100%;
+                    h3{
+                        color: $secondary;
+                    }
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 1.0vw;
+                        @include datePickerIcon(1.5em);
+                    }
+                }
+                
+                div.taskDeadline:hover i.creationDate, div.taskWarnDate:hover i.creationDate{
+                    color: black;
+                    opacity: 1;
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+
+                p.createdAt{
+                    font-weight: 700;
+                    margin-top: 1vw;
+                    justify-self: flex-end;
+                    font-size: 1.0vw;
+                    span{
+                        color: $secondary;
+                        margin-inline-end: 0.4vw;
+                    }
+                }
+                
+            }
+            div.menuTask::after {
+                position: absolute;
+                content: '';
+                width: 0.5vw;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient($primary, $secondary);
+            }
+            div.menuTask::before {
+                position: absolute;
+                content: '';
+                width: 0.5vw;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-image: linear-gradient($primary, $secondary);
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    body#tasksPage{
+        header {
+            padding: 0 5vw;
+            margin-bottom: 2em;
+            font-size: 5vw;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            i.mobileMenu{
+                display: block;
+                color: white;
+                font-size: 7vw;
+            }
+            div.user-info {
+                display: flex;
+    
+                div.userData{
+                    display: none;
+                }
+    
+                div.drop-down-menu{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    right: 10vw;
+                    top: 8vh;
+                    background-color: white;
+                    border: solid 0.25vw $secondary;
+                    width: 80vw;
+                    border-radius: 10px;
+                    padding: 5vw  0vw 2.5vw 0vw;
+                    gap: 8vw;
+    
+                    div.image{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 3vw;
+                        img{
+                            width: 35vw;
+                            height: 35vw;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                        h2{
+                            color: $secondary;
+                        }
+                    }
+
+                    div.notch{
+                        display: none;
+                    }
+    
+                    ul{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 4vw;
+                        li{
+                            gap: 3vw;
+                            cursor: pointer;
+                            align-self: flex-start;
+                            margin-left: 10vw;
+                            a{
+                                font-size: 5.5vw;
+                            }
+                            i{
+                                font-size: 7vw;
+                            }
+                        }
+                        hr{
+                            background: $secondary;
+                            height: 0.5vw;
+                            width: 75%;
+                            margin: 4.5vw 0vw;                        
+                        }
+                    }
+                }
+            }
+        }
+    
+        main{
+            section.boardTasks{
+                form.nueva-tarea {
+                    margin: 0vw 0vw 0vw 2.5vw;
+                    padding: 1em 0em 1em 1em;
+                    width: 90vw;
+
+                    input.nombreTarea{
+                        width: 50vw;
+                    }
+
+                    label.dataPicker, label.timePickerWarnMe{
+                        position: relative;
+                        width: 2em;
+                        height: 2em;
+                        margin-right: 0.7em;
+                        margin-left: 0.5em;
+                        i.warnme{
+                            font-size: 1.7em;
+                            margin-top: 0.1em;
+                        }
+                    }
+                    
+                    label.timePickerWarnMe{
+                        margin-right: 0.5em;
+                        margin-left: 0.5em;
+                    }
+            
+                    span{
+                        display: none;
+                        position: absolute;
+                        font-size: 0.5em;
+                        text-align: center;
+                        width: 13vw;
+                        top: 1.2vw;
+                        &.deadline{
+                            right: 23vw;
+                        }
+                        &.warnline{
+                            right: 10vw;
+                        }
+                    }
+                    
+                    button {
+                        height: 2em;
+                        width: 2em;
+                        background-color: transparent;
+                        margin: 0em 1em 0em 0em;
+                        opacity: .5;
+                    }
+                    
+                    button:hover {
+                        opacity: 1;
+                    }
+                
+                    .not-done {
+                        display: none;
+                    }
+                    div.sortAndFilter{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 3.5vw;
+                        position: absolute;
+                        bottom: -18vw;
+                        left: 4vw;
+                        width: fit-content;
+                        i.filter, i.sort{
+                            font-size:5vw;
+                        }
+                        i.sort{
+                            div{
+                                all: initial;
+                                display: none;
+                                @include listSortFilterMobile;
+                                top: -3vw;
+                                left: 7vw;
+                                cursor: none;
+                            }
+                        }
+                        i.filter{
+                            margin-left: -0.5vw;
+                            div{
+                                all: initial;
+                                display: none;
+                                @include listSortFilterMobile;
+                                top: 5.5vw;
+                                left: 7vw;
+                                cursor: none;
+                            }
+                        }
+                    }
+                }
+    
+                ul.tareas-pendientes {
+                    width: fit-content;
+                    margin: 2em 2.5vw 2em 12.5%;
+                    padding-right: 2.5vw;
+            
+                    li.tarea {
+                    margin-bottom: 1.5em;
+                    
+                    div.descripcion {
+                        padding: 1em 1em 1em 1.5em;
+                        justify-content: space-between;
+                        width: 62.5vw;
+                            div{
+                                p.timestamp {
+                                    gap: 1vw;
+                                    font-size: .7em;
+                                    color: rgb(134, 134, 134);
+                                }
+                            }
+                            i.remainingTimeL{
+                                font-size: 1em;
+                                margin-right: 0.75vw;    
+                            }
+                        }
+            
+                    }
+                }
+            
+                h2.titulo-terminadas {
+                    padding: .5em 0.75em;
+                    margin-left: 2.5vw;
+                }
+            
+                ul.tareas-terminadas {
+                    width: fit-content;
+                    margin: 2em 2.5vw 2em 12.5%;
+            
+                    li.tarea {
+                        margin-bottom: 1.5em;
+                
+                            div.descripcion {
+                                padding: 1em 1em 1em 1.5em;
+                                justify-content: space-between;
+                                width: 62.5vw;
+                            
+                            div{
+                                display: flex;
+                                align-items: center;
+                                gap: 1vw;
+                                p.nombre {
+                                    font-size: 1em;
+                                }
+                                i.trashDoneTask{
+                                    font-size: 1em;
+                                    position: absolute;
+                                    display: block;
+                                    left: 5vw;
+                                }
+                            }
+                            }
+                        }
+                }
+            }
+     
+            section.menuTask{
+                div.menuTask{
+                    @include form(5vw, 9vw);
+                    padding-bottom: 3vw;
+                    gap: 7vw;
+                    display: none;
+                    position: fixed;
+                    width: 80vw;
+                    top: 30vh;
+    
+                    i.option{
+                        font-size: 5vw;
+                        &.close{
+                            top: 2.5vw;
+                            right: 4.5vw;
+                            font-size: 4vw;
+                        }
+                        &.trash{
+                            bottom: 2vw;
+                            left: 3.5vw;
+                            font-size: 6vw;
+                        }
+                        &.save{
+                            bottom: 2vw;
+                            left: 12vw;
+                            font-size: 6vw;
+                        }
+                        &.saved{
+                            display: none;
+                            font-size: 6vw;
+                        }
+                    }
+                    i.option:hover{
+                        color: black;
+                        transform: scale(1.1);
+                    }
+                    i.saved:hover{
+                        color: rgb(1, 255, 1);
+                        transform: scale(1)
+                    }
+                    
+                    h2{
+                        margin-bottom: -1vw;
+                        font-size: 1.4em;
+                    }
+                    
+                    div.taskTitle{
+                        div.not-done{
+                            @include circleTask(1.5em);
+                        }
+                        p{
+                            font-size: 1.2em;
+                            margin-left: -0.5em;
+                        }
+                        input{
+                            display: none;
+                            @include formInput;
+                            height: 1.25em;
+                            padding: 0.4em 0.5em;
+                            width: 50vw;
+                            font-size: 1.2em;
+                        }
+                    }
+    
+                    div.taskDeadline, div.taskWarnDate{
+                        justify-self: flex-start;
+                        width: 100%;
+                        h3{
+                            font-size: 1em;
+                        }
+                        div{
+                            font-size: 1em;
+                            @include datePickerIcon(1.5em);
+                        }
+                    }
+    
+                    p.createdAt{
+                        font-weight: 700;
+                        margin-top: 1vw;
+                        align-self: flex-end;
+                        font-size: 0.8em;
+                        span{
+                            color: $secondary;
+                            margin-inline-end: 0.4vw;
+                        }
+                    }
+                    
+                }
+                div.menuTask::after, div.menuTask::before {
+                    width: 2vw;
+                }
+            }
+        }
+    }
+}

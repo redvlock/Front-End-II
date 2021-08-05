@@ -1,0 +1,115 @@
+footer{
+    
+    // INFORMATION CORPORATIVE AND SOCIAL NETWORKS
+    div#aboutus{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1vw 2vw 1vw 2vw;
+        background-color: $mainColor;
+        color: white;
+        // FOLLOW OUR SOCIAL NETWORKS
+        div#followus{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            order: 1;
+            img{
+                width: 10vw;
+            }
+            div#socialNetworks{
+                p{
+                    margin-top: 0.5vw;
+                    margin-bottom: 0.2vw;
+                    margin-left: 0.2vw;
+                    font-size: 1vw;
+                }
+                i{
+                    font-size: 2vw;
+                }
+                i.fb{
+                    margin-left: 0.5vw;
+                    color: #3b5998;
+                    margin-right: 0.5vw;
+                }
+                i.ign{
+                    color: #8a3ab9;
+                    margin-right: 0.5vw;
+                }
+                i.ytb{
+                    color: #c4302b;
+                }
+            }
+        }
+
+        div#termsAndPolicies{
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            a{
+                color: white;
+            }
+        }
+    }
+    
+    // COPYRIGHT INFORMATION
+    div#copyright{            
+        p{
+        background-color: $secondMainColor;   
+        text-align: center;
+        font-size: 1vw;
+        }
+    }
+
+    @media (max-width: 480px){
+        div#aboutus{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 3vw 2.5vw 2vw 2.5vw;
+            // FOLLOW OUR SOCIAL NETWORKS
+            div#followus{
+                align-items: center;
+                img{
+                    width: 35vw;
+                }
+                div#socialNetworks{
+                    p{
+                        font-size: 3vw;
+                        margin-bottom: 1.5vw;
+                    }
+                    i{
+                        font-size: 4vw;
+                    }
+                    i.fb{
+                        margin-left: 3.5vw;
+                        margin-right: 0.5vw;
+                    }
+                }
+            }
+    
+            div#termsAndPolicies{
+                width: 90%;
+                margin-top: 2vw;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 2vw;
+                column-gap: 3vw;
+                a{
+                    color: white;
+                    font-size: 2.5vw;
+                }
+            }
+        }
+        
+        // COPYRIGHT INFORMATION
+        div#copyright{           
+            p{
+            padding: 1.5vw; 
+            font-size: 2.5vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,255 @@
+main{
+    padding: 4vw 5vw 0vw 5vw;
+
+    // MAIN NEW
+    div#mainNew{
+        display: flex;
+        gap: 2vw;
+        align-items: center;
+
+        // IMAGE MAIN NEW
+        div.mainNewImage{
+            position: relative;
+         // IMAGE
+            img{
+                width: 50vw;
+                height: 100%;
+            }
+        // CATEGORY TAG
+            div.scopeArea{
+                padding: 0.2vw;
+                position: absolute;
+                bottom: 1vw;
+                left: 1vw;
+                background-color: $secondMainColor;
+                font-weight: 600;
+                border-radius: 0.5vw;
+            }
+
+        }
+
+        // DESCRIPTION MAIN NEW
+        div.mainNewDescription{
+            
+            // TITLE
+            h2{
+                font-size: 3vw;
+                margin-bottom: 2vw;
+            }
+
+            // TEXT DESCRIPTION
+            p.description{
+                font-size: 1.5vw;
+                margin-bottom: 1vw;
+            }
+
+            // DATE NEW
+            p.date{
+                font-weight: bold;
+                font-size: 0.9vw;
+                margin-left: 90%;
+            }
+        }
+        
+        
+    }
+
+    // SECTION MORE NEWS
+    p.section{
+        display: inline-flex;
+        margin-top: 3vw;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3vw;
+    }
+    i.moreNewsArrow{
+        margin-left: 0.3vw;
+        color: $mainColor;
+    }
+    hr.section{
+        background: $secondMainColor;
+        border: none;
+        height: 2px;
+    }
+
+    // REGULAR NEWS
+    div#regularNews{
+        display: flex;
+        margin-top: 0.75vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        //REGULAR NEW DIV
+        div.regularNew{
+            margin-top: 1.25vw;
+            margin-bottom: 1.25vw;
+            width: 20vw;
+            
+            // IMAGE
+            div.newImage{
+                position: relative;
+                // IMAGE
+                   img{
+                       width: 100%;
+                       height: 100%;
+                   }
+               // CATEGORY TAG
+                   div.scopeArea{
+                       padding: 0.2vw;
+                       position: absolute;
+                       top: 1vw;
+                       right: 1vw;
+                       font-weight: 600;
+                       border-radius: 0.5vw;
+                   }
+                   div.internacional{
+                    background-color: $secondMainColor;
+                   }
+                   div.nacional{
+                    background-color: $optionsColor;
+                   }
+            }
+
+            // DESCRIPTION
+            div.newDescription{
+                display: flex;
+                flex-direction: column;
+                gap: 0.4vw;
+                margin-top: 0.5vw;
+                h2{
+                   font-family: Arial, Helvetica, sans-serif; 
+                   font-size: 1.3vw;
+                }
+                p.description{
+                    font-size: 0.9vw;
+                }
+                p.date{
+                    font-weight: bold;
+                    font-size: 0.9vw;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        // MAIN NEW
+        div#mainNew{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+
+            // IMAGE MAIN NEW
+            div.mainNewImage{
+            // IMAGE
+                img{
+                    width: 80vw;
+                }
+            // CATEGORY TAG
+                div.scopeArea{
+                    padding: 0.5vw;
+                    bottom: 2.5vw;
+                    left: 2.5vw;
+                    border-radius: 0.5vw;
+                    font-size: 2vw;
+                }
+
+            }
+
+        // DESCRIPTION MAIN NEW
+        div.mainNewDescription{
+            
+            // TITLE
+            h2{
+                font-size: 7vw;
+                margin-bottom: 2vw;
+            }
+
+            // TEXT DESCRIPTION
+            p.description{
+                font-size: 3vw;
+                margin-bottom: 1vw;
+            }
+
+            // DATE NEW
+            p.date{
+                font-size: 2.5vw;
+                margin-left: 88%;
+            }
+        }
+        
+    }
+
+    
+        // SECTION MORE NEWS
+        p.section{
+            font-size: 3vw;
+        }
+        i.moreNewsArrow{
+            font-size: 3vw;
+            margin-left: 0.5vw;
+        }
+        hr.section{
+            height: 0.4vw;
+
+        }
+
+        // REGULAR NEWS
+        div#regularNews{
+            padding: 2vw 0vw;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3vw;
+
+            //REGULAR NEW DIV
+            div.regularNew{
+                margin-top: 0vw;
+                margin-bottom: 0vw;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 2.5vw;
+                align-items: center;
+                
+                // IMAGE
+                div.newImage{
+                    // IMAGE
+                    img{
+                        width: 16vh;
+                        height: 10vh;
+                    }
+                // CATEGORY TAG
+                    div.scopeArea{
+                        position: absolute;
+                        width: fit-content;
+                        padding: 0.4vw;
+                        top: 2vw;
+                        left: 2vw;
+                        font-weight: 600;
+                        border-radius: 0.5vw;
+                        font-size: 2vw;
+                    }
+                }
+
+                // DESCRIPTION
+                div.newDescription{
+                    gap: 0.6vw;
+                    h2{ 
+                        font-size: 3vw;
+                        line-height: 3vw;
+                        margin-top: -2vw;
+                    }
+                    p.description{
+                        font-size: 2.2vw;
+                    }
+                    p.date{
+                        display: none;
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+}

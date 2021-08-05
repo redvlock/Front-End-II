@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Noticias</title>
+</head>
+<body>
+    <header>
+        <div id="mainLogo">
+            <img id="logo" src="./img/mainLogo.png" alt="News Click Logo">
+            <div id="search">
+                <i class="fas fa-search lupa"></i>
+                <div id="search">
+                    <form action="" method="GET">
+                        <input type="text" id="inputSearch" name="inputSearch" autocomplete="off">
+                    </form>
+                    <div id="results" class="coincidence">
+                        <!-- <img src="https://www.infobae.com/new-resizer/n515a-2ZZvJJgZ3EI6sfxWYm5Lg=/768x432/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UEEVG5ND43BTLP5RTK3V62NISM.jpg" alt="Image Main New">
+                        <a href=""><h3>La UE aprobó un fondo de USD 21.000 millones para apoyar transición verde</h3></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="sections">
+            <div id="divisas">
+                <!-- <p>Dolar Blue: <span>164</span><i class="fas fa-sort-up growP"></i></p> -->
+                <!-- <p>Euro: <span>114</span></p> -->
+            </div>
+            <i class="fas fa-bars barMenu"></i>
+            <ul type="square">
+                <li class="section economy"><a href="">Economia</a></li>
+                <li class="section sline heatlh"><a href="">Salud</a></li>
+                <li class="section sline tecnology"><a href="">Tecnologia</a></li>
+                <li class="section sline Science"><a href="">Ciencia</a></li>
+                <li class="section sline culture"><a href="">Cultura</a></li>
+                <li class="section sline sports"><a href="">Deportes</a></li>
+                <li class="section sline politic"><a href="">Politica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- MAIN NEW  -->
+        <div id="mainNew" class="international">
+            <div class="mainNewImage">
+                <div class="scopeArea">Internacional</div>
+                <img src="https://www.infobae.com/new-resizer/n515a-2ZZvJJgZ3EI6sfxWYm5Lg=/768x432/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UEEVG5ND43BTLP5RTK3V62NISM.jpg" alt="Image Main New">
+            </div>
+            <div class="mainNewDescription">
+                <h2>La UE aprobó un fondo de USD 21.000 millones para apoyar transición verde</h2>
+                <p class="description">El objetivo es ayudar a los países a emprender la transición ecológica en su camino hacia una economía libre de emisiones de gases de efecto invernadero a mitad de siglo</p>
+                <p class="date">04/06/21</p>
+            </div>
+        </div>
+
+        <!-- SECTION DIVISION -->
+        <p class="section">Más Noticias</p>
+        <i class="fas fa-chevron-down moreNewsArrow"></i>
+        <hr class="section">
+        <div class="news"></div>
+
+        <!-- REGULAR NEWS -->
+        <div id="regularNews">
+            <!-- <div class="regularNew">
+                <div class="newImage">
+                    <div class="scopeArea">Internacional</div>
+                    <img src="https://www.infobae.com/new-resizer/9qc1rervLRhJWJ5iTr0ODd_ctMM=/768x432/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/MSQDSQCH7NDAFLLCXFS7IO2PFU.jpg" alt="Image Main New">
+                    </div>
+                    <div class="newDescription">
+                    <h2>El gran gesto por amor de Jennifer Lopez hacia Ben Affleck</h2>
+                    <p class="description">La cantante fue vista averiguando sobre escuelas en Los Ángeles, lo que hace suponer que podría mudarse con sus hijos allí para estar cerca del actorEl objetivo es ayudar a los países a emprender la transición ecológica en su camino hacia una economía libre de emisiones de gases de efecto invernadero a mitad de siglo</p>
+                    <p class="date">02/06/21</p>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    
+    <footer>
+        <div id="aboutus">
+            <div id="followus">
+                <img src="./img/mainLogo.png" alt="News Click Logo">
+                <div id="socialNetworks">
+                    <p>Siguenos en redes</p>
+                    <a href=""><i class="fab fa-facebook fb"></i></a>
+                    <a href=""><i class="fab fa-instagram ign"></i></a>
+                    <a href=""><i class="fab fa-youtube ytb"></i></a>
+                </div>
+            </div>
+            <div id="termsAndPolicies">
+                <a href="">Terminos de Uso</a>
+                <a href="">Politica de Privacidad</a>
+                <a href="">RSS</a>
+                <a href="">Trabaje con nosotros</a>
+                <a href="">Cookies</a>
+                <a href="">Acerca de NewsClick</a>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>© Todos los derechos reservados a NewsClick by Juan Rojas</p>
+        </div>
+    </footer>
+
+    <script src="JS/data.js"></script>
+    <script src="JS/script.js" defer></script>
+</body>
+</html>

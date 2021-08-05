@@ -1,0 +1,738 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+header div#mainLogo {
+  background-color: black;
+  padding: 1.8vw 2.5vw 1.8vw 1.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div#mainLogo div#search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3vw;
+}
+
+header div#mainLogo div#search i {
+  color: #b8b8b8;
+  font-size: 2vw;
+}
+
+header div#mainLogo div#search div#search {
+  position: relative;
+}
+
+header div#mainLogo div#search div#search form input {
+  border-radius: 1.2vw;
+  border: 0.15vw solid #b8b8b8;
+  background-color: black;
+  color: white;
+  padding: 0.3vw 0.5vw;
+  outline: none;
+  width: 15vw;
+}
+
+header div#mainLogo div#search div#search div.coincidence {
+  position: absolute;
+  bottom: -6vw;
+  padding: 0.6vw;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4vw;
+  width: 15vw;
+  background-color: #b8b8b8;
+  z-index: 100;
+}
+
+header div#mainLogo div#search div#search div.coincidence img {
+  width: 50%;
+  height: 25%;
+}
+
+header div#mainLogo div#search div#search div.coincidence h3 {
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  color: black;
+}
+
+header div#mainLogo div#search div#search div.notRefund {
+  position: absolute;
+  bottom: -6vw;
+  padding: 0.6vw;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4vw;
+  width: 15vw;
+  height: 5vw;
+  background-color: #b8b8b8;
+  z-index: 100;
+}
+
+header div#mainLogo div#search div#search div.notRefund h3 {
+  font-size: 1vw;
+  line-height: 0.7vw;
+  color: black;
+}
+
+header nav#sections {
+  background-color: #fac218;
+  padding: 1vw 0vw;
+}
+
+header nav#sections div#divisas {
+  display: none;
+}
+
+header nav#sections i.barMenu {
+  display: none;
+}
+
+header nav#sections ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+
+header nav#sections ul li {
+  display: block;
+  font-size: 1.15vw;
+  font-weight: bold;
+}
+
+header nav#sections ul li a {
+  position: relative;
+  color: black;
+}
+
+header nav#sections ul li.sline::before {
+  content: "|";
+  font-size: 1em;
+  color: black;
+  margin-right: 2vw;
+}
+
+header nav#sections ul li a::before {
+  content: " ";
+  background-color: #fac218;
+  position: absolute;
+  bottom: -0.3vw;
+  width: 0;
+  height: 0.4vh;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+header nav#sections ul li a:hover::before {
+  width: 103%;
+  background-color: #b8b8b8;
+}
+
+header nav#sections ul li a:hover {
+  color: #b8b8b8;
+}
+
+@media (max-width: 480px) {
+  header div#mainLogo {
+    padding: 4vw 3vw 4vw 2.2vw;
+  }
+  header div#mainLogo img#logo {
+    width: 45vw;
+  }
+  header div#mainLogo div#search i {
+    color: #b8b8b8;
+    font-size: 4vw;
+    margin-right: 2vw;
+  }
+  header div#mainLogo div#search div#search {
+    position: relative;
+  }
+  header div#mainLogo div#search div#search form input {
+    display: none;
+    width: 0vw;
+    height: 4vw;
+    border: 0.4vw solid #b8b8b8;
+  }
+  header div#mainLogo div#search div#search div.coincidence {
+    position: absolute;
+    bottom: -11vw;
+    padding: 1vw;
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.4vw;
+    width: 30vw;
+    background-color: #b8b8b8;
+  }
+  header div#mainLogo div#search div#search div.coincidence img {
+    width: 50%;
+    height: 25%;
+  }
+  header div#mainLogo div#search div#search div.coincidence h3 {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    color: black;
+  }
+  header div#mainLogo div#search div#search div.notRefund {
+    position: absolute;
+    bottom: -11vw;
+    padding: 1vw;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.4vw;
+    width: 30vw;
+    height: 10vw;
+    background-color: #b8b8b8;
+  }
+  header div#mainLogo div#search div#search div.notRefund h3 {
+    font-size: 2vw;
+    line-height: 0.7vw;
+    color: black;
+  }
+  header nav#sections {
+    padding: 1vw 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav#sections div#divisas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+  }
+  header nav#sections div#divisas p {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 6vw;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  header nav#sections div#divisas p span {
+    font-weight: lighter;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  header nav#sections div#divisas p i.growP {
+    color: green;
+    font-size: 5vw;
+    position: absolute;
+    right: -3vw;
+    top: 1.5vw;
+  }
+  header nav#sections div#divisas p i.growN {
+    color: red;
+    font-size: 5vw;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    position: absolute;
+    right: -3vw;
+    bottom: 2vw;
+  }
+  header nav#sections i.barMenu {
+    display: block;
+    font-weight: bold;
+    font-size: 6vw;
+  }
+  header nav#sections ul {
+    position: absolute;
+    right: 2vw;
+    top: 22vw;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #b8b8b8;
+    z-index: 100;
+  }
+  header nav#sections ul li.sline {
+    border-top: 0.2vw solid black;
+  }
+  header nav#sections ul li {
+    display: block;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 2vw 20vw 2vw 2vw;
+  }
+  header nav#sections ul li.sline::before {
+    content: "";
+    margin-right: 0vw;
+  }
+  header nav#sections ul li a::before {
+    content: " ";
+    background-color: #fac218;
+    position: absolute;
+    bottom: -0.7vw;
+    width: 0;
+    height: 0.2vh;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  header nav#sections ul li a:hover::before {
+    width: 103%;
+    background-color: #fac218;
+  }
+  header nav#sections ul li a:hover {
+    color: black;
+  }
+}
+
+main {
+  padding: 4vw 5vw 0vw 5vw;
+}
+
+main div#mainNew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div#mainNew div.mainNewImage {
+  position: relative;
+}
+
+main div#mainNew div.mainNewImage img {
+  width: 50vw;
+  height: 100%;
+}
+
+main div#mainNew div.mainNewImage div.scopeArea {
+  padding: 0.2vw;
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+  background-color: #fac218;
+  font-weight: 600;
+  border-radius: 0.5vw;
+}
+
+main div#mainNew div.mainNewDescription h2 {
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
+
+main div#mainNew div.mainNewDescription p.description {
+  font-size: 1.5vw;
+  margin-bottom: 1vw;
+}
+
+main div#mainNew div.mainNewDescription p.date {
+  font-weight: bold;
+  font-size: 0.9vw;
+  margin-left: 90%;
+}
+
+main p.section {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 3vw;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+}
+
+main i.moreNewsArrow {
+  margin-left: 0.3vw;
+  color: black;
+}
+
+main hr.section {
+  background: #fac218;
+  border: none;
+  height: 2px;
+}
+
+main div#regularNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.75vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main div#regularNews div.regularNew {
+  margin-top: 1.25vw;
+  margin-bottom: 1.25vw;
+  width: 20vw;
+}
+
+main div#regularNews div.regularNew div.newImage {
+  position: relative;
+}
+
+main div#regularNews div.regularNew div.newImage img {
+  width: 100%;
+  height: 100%;
+}
+
+main div#regularNews div.regularNew div.newImage div.scopeArea {
+  padding: 0.2vw;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-weight: 600;
+  border-radius: 0.5vw;
+}
+
+main div#regularNews div.regularNew div.newImage div.internacional {
+  background-color: #fac218;
+}
+
+main div#regularNews div.regularNew div.newImage div.nacional {
+  background-color: #b8b8b8;
+}
+
+main div#regularNews div.regularNew div.newDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.4vw;
+  margin-top: 0.5vw;
+}
+
+main div#regularNews div.regularNew div.newDescription h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+}
+
+main div#regularNews div.regularNew div.newDescription p.description {
+  font-size: 0.9vw;
+}
+
+main div#regularNews div.regularNew div.newDescription p.date {
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+
+@media (max-width: 480px) {
+  main div#mainNew {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vw;
+  }
+  main div#mainNew div.mainNewImage img {
+    width: 80vw;
+  }
+  main div#mainNew div.mainNewImage div.scopeArea {
+    padding: 0.5vw;
+    bottom: 2.5vw;
+    left: 2.5vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+  }
+  main div#mainNew div.mainNewDescription h2 {
+    font-size: 7vw;
+    margin-bottom: 2vw;
+  }
+  main div#mainNew div.mainNewDescription p.description {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  main div#mainNew div.mainNewDescription p.date {
+    font-size: 2.5vw;
+    margin-left: 88%;
+  }
+  main p.section {
+    font-size: 3vw;
+  }
+  main i.moreNewsArrow {
+    font-size: 3vw;
+    margin-left: 0.5vw;
+  }
+  main hr.section {
+    height: 0.4vw;
+  }
+  main div#regularNews {
+    padding: 2vw 0vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+  }
+  main div#regularNews div.regularNew {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2.5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main div#regularNews div.regularNew div.newImage img {
+    width: 16vh;
+    height: 10vh;
+  }
+  main div#regularNews div.regularNew div.newImage div.scopeArea {
+    position: absolute;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.4vw;
+    top: 2vw;
+    left: 2vw;
+    font-weight: 600;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+  }
+  main div#regularNews div.regularNew div.newDescription {
+    gap: 0.6vw;
+  }
+  main div#regularNews div.regularNew div.newDescription h2 {
+    font-size: 3vw;
+    line-height: 3vw;
+    margin-top: -2vw;
+  }
+  main div#regularNews div.regularNew div.newDescription p.description {
+    font-size: 2.2vw;
+  }
+  main div#regularNews div.regularNew div.newDescription p.date {
+    display: none;
+    font-size: 1.5vw;
+  }
+}
+
+footer div#aboutus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1vw 2vw 1vw 2vw;
+  background-color: black;
+  color: white;
+}
+
+footer div#aboutus div#followus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+footer div#aboutus div#followus img {
+  width: 10vw;
+}
+
+footer div#aboutus div#followus div#socialNetworks p {
+  margin-top: 0.5vw;
+  margin-bottom: 0.2vw;
+  margin-left: 0.2vw;
+  font-size: 1vw;
+}
+
+footer div#aboutus div#followus div#socialNetworks i {
+  font-size: 2vw;
+}
+
+footer div#aboutus div#followus div#socialNetworks i.fb {
+  margin-left: 0.5vw;
+  color: #3b5998;
+  margin-right: 0.5vw;
+}
+
+footer div#aboutus div#followus div#socialNetworks i.ign {
+  color: #8a3ab9;
+  margin-right: 0.5vw;
+}
+
+footer div#aboutus div#followus div#socialNetworks i.ytb {
+  color: #c4302b;
+}
+
+footer div#aboutus div#termsAndPolicies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2vw;
+}
+
+footer div#aboutus div#termsAndPolicies a {
+  color: white;
+}
+
+footer div#copyright p {
+  background-color: #fac218;
+  text-align: center;
+  font-size: 1vw;
+}
+
+@media (max-width: 480px) {
+  footer div#aboutus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3vw 2.5vw 2vw 2.5vw;
+  }
+  footer div#aboutus div#followus {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div#aboutus div#followus img {
+    width: 35vw;
+  }
+  footer div#aboutus div#followus div#socialNetworks p {
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+  }
+  footer div#aboutus div#followus div#socialNetworks i {
+    font-size: 4vw;
+  }
+  footer div#aboutus div#followus div#socialNetworks i.fb {
+    margin-left: 3.5vw;
+    margin-right: 0.5vw;
+  }
+  footer div#aboutus div#termsAndPolicies {
+    width: 90%;
+    margin-top: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2vw;
+    -webkit-column-gap: 3vw;
+            column-gap: 3vw;
+  }
+  footer div#aboutus div#termsAndPolicies a {
+    color: white;
+    font-size: 2.5vw;
+  }
+  footer div#copyright p {
+    padding: 1.5vw;
+    font-size: 2.5vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

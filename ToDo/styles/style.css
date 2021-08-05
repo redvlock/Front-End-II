@@ -1,0 +1,2640 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #F6F6F6;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+}
+
+body.signIn section div#form form {
+  height: 27.447916666666668vw;
+}
+
+body.signIn section div#form form div.image {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vw;
+}
+
+body.signIn section div#form form div.image img {
+  display: none;
+  width: 10vw;
+  height: 10vw;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  opacity: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  cursor: pointer;
+}
+
+body.signIn section div#form form div.image img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body.signIn section div#form form div.image h2 {
+  color: #8E64C5;
+}
+
+body.signIn section div#form form input {
+  display: none;
+}
+
+body.signIn section div#form form label {
+  display: none;
+}
+
+body.signIn section div#form form label#rememberme {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9vw;
+  margin-bottom: -1vw;
+  color: gray;
+}
+
+body.signIn section div#form form label#rememberme input {
+  margin: 0vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body.signIn section div#form form button {
+  display: none;
+}
+
+body.signIn section div#form form a {
+  display: none;
+}
+
+body.signIn footer.signIn {
+  display: block;
+}
+
+body.signIn footer.signIn p {
+  position: absolute;
+  bottom: 0.2vw;
+  left: 0;
+  right: 0.3vw;
+  margin-right: auto;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+body.signIn footer.signIn p span {
+  font-size: 0.9vw;
+  font-weight: 700;
+  color: #8E64C5;
+}
+
+body.signIn::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 800px) {
+  body.signIn {
+    padding: 5vh 0vw 0vh 0vw;
+    gap: 16vh;
+  }
+  body.signIn section div#form form {
+    height: 111.42926208651399vw;
+  }
+  body.signIn section div#form form div.image {
+    display: none;
+    gap: 1vw;
+  }
+  body.signIn section div#form form div.image img {
+    display: none;
+    width: 35vw;
+    height: 35vw;
+  }
+  body.signIn section div#form form div.image h2 {
+    color: #8E64C5;
+    margin-top: 5vw;
+  }
+  body.signIn section div#form form label#rememberme {
+    gap: 1.5vw;
+    font-size: 3.5vw;
+    margin-top: 5vw;
+    margin-bottom: -5vw;
+  }
+  body.signIn section div#form form label#rememberme input {
+    margin: 0vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body.signIn section div#form form button {
+    margin-bottom: 4vw;
+  }
+  body.signIn footer.signIn {
+    margin: 0vw 0vw 0vw 0vw;
+  }
+  body.signIn footer.signIn p {
+    position: relative;
+    margin: 0vw 0vw 0vw 0vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 4vw;
+  }
+  body.signIn footer.signIn p span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 4vw;
+  }
+}
+
+body {
+  background-image: url("../assets/ManangmentTasks.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6vw;
+  padding-left: 10vw;
+  padding-right: 8vw;
+  /* TEXT DESCRIPTION */
+}
+
+body section div#form {
+  position: relative;
+}
+
+body section div#form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  padding: 2vw 3.3vw;
+  -webkit-box-shadow: 0 5px 5px lightgrey;
+          box-shadow: 0 5px 5px lightgrey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  /* position: absolute; */
+  /* top: 50%;
+        left: 22%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
+}
+
+body section div#form form .form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  font-size: 1.8vw;
+  margin-bottom: 0.8vw;
+}
+
+body section div#form form .form-header h1 {
+  font-size: 1.7vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+body section div#form form .form-header span#alert {
+  color: red;
+  font-size: 1vw;
+  margin-bottom: -1vw;
+}
+
+body section div#form form div.loadImage {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section div#form form div.loadImage img {
+  width: 12vw;
+  height: 12vw;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  opacity: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+body section div#form form div.loadImage label {
+  padding: 0vw;
+  margin-top: 2.5vw;
+  text-align: center;
+}
+
+body section div#form form div.loadImage label#load {
+  all: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  font-size: 0.9vw;
+  font-family: "ROBOTO";
+  padding: 0.4vw 1vw;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1.5vw;
+}
+
+body section div#form form div.loadImage label#load:hover {
+  opacity: 80%;
+}
+
+body section div#form form div.loadImage input {
+  display: none;
+}
+
+body section div#form form div.loadImage span#fileAlert {
+  color: red;
+  font-size: 0.8vw;
+  font-style: italic;
+  color: red;
+  margin-top: 1vw;
+  margin-bottom: -0.8vw;
+}
+
+body section div#form form input {
+  width: 100%;
+  height: 1.25vw;
+  padding: 0.4vw 0.5vw;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 0.3vw;
+  font-size: 1vw;
+  font-weight: 100;
+}
+
+body section div#form form input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+body section div#form form label {
+  width: 100%;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-top: 1.5vw;
+  color: #8E64C5;
+  position: relative;
+}
+
+body section div#form form label span {
+  font-size: 0.8vw;
+  font-style: italic;
+  color: red;
+  margin: 0;
+}
+
+body section div#form form label i#eyeOn {
+  display: block;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0vw;
+}
+
+body section div#form form label i#eyeOff {
+  display: none;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 0vw;
+}
+
+body section div#form form button {
+  padding: 0.5vw 1.8vw;
+  background-color: var(--primary);
+  color: white;
+  margin-top: 2.25vw;
+  font-weight: 400;
+  font-size: 1.2vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  margin-bottom: 1.5vw;
+  cursor: pointer;
+}
+
+body section div#form form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body section div#form form a {
+  text-decoration: none;
+  color: #8E64C5;
+  font-size: 1vw;
+}
+
+body section div#form form::after {
+  position: absolute;
+  content: '';
+  width: 0.8vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+}
+
+body section div#form form::before {
+  position: absolute;
+  content: '';
+  width: 0.8vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+}
+
+body section div#form div#spinner {
+  display: none;
+}
+
+body section div#form div.spinner {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8vw;
+  opacity: 100%;
+}
+
+body section div#form div.spinner span#spinner {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: transparent;
+  border-top: 0.8vw solid #8E64C5;
+  border-bottom: 0.8vw solid #7898FF;
+  border-left: 0.8vw solid #8E64C5;
+  border-right: 0.8vw solid #7898FF;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+body section div#form div.spinner span#charging {
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: grey;
+}
+
+body section div#form div#resultRegister {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8vw;
+}
+
+body section div#form div#resultRegister i {
+  font-size: 6vw;
+  color: rgba(21, 209, 21, 0.856);
+}
+
+body section div#form div#resultRegister span#successfully {
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: grey;
+}
+
+body section div#info h2 {
+  font-size: 6.3vw;
+  font-weight: 700;
+  line-height: 7vw;
+  margin-bottom: 0.8vw;
+  opacity: 300%;
+  -webkit-filter: contrast(3);
+          filter: contrast(3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+body section div#info p {
+  font-family: "Roboto";
+  font-size: 1.9vw;
+  font-weight: 400;
+}
+
+body footer {
+  display: none;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 800px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    /* TEXT DESCRIPTION */
+  }
+  body section div#form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  body section div#form form {
+    width: 80vw;
+    padding: 6vw 5vw;
+  }
+  body section div#form form .form-header {
+    font-size: 7vw;
+    margin-bottom: -2vw;
+  }
+  body section div#form form .form-header h1 {
+    margin-bottom: 2vw;
+    font-size: 7vw;
+  }
+  body section div#form form .form-header span#alert {
+    font-size: 3.5vw;
+    margin-bottom: -3.5vw;
+  }
+  body section div#form form div.loadImage {
+    display: none;
+  }
+  body section div#form form div.loadImage img {
+    width: 50vw;
+    height: 50vw;
+  }
+  body section div#form form div.loadImage label {
+    margin-top: 10vw;
+    font-size: 5vw;
+  }
+  body section div#form form div.loadImage label#load {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2vw;
+    font-size: 4vw;
+    padding: 2.5vw 5vw;
+    margin-top: 6vw;
+  }
+  body section div#form form div.loadImage span#fileAlert {
+    color: red;
+    font-size: 3.5vw;
+    font-style: italic;
+    color: red;
+    margin-top: 5vw;
+    margin-bottom: -3.5vw;
+  }
+  body section div#form form input {
+    width: 100%;
+    height: 9vw;
+    padding: 2vw 2vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 1vw;
+    font-size: 4vw;
+    font-weight: 300;
+  }
+  body section div#form form input:focus {
+    border: 5px solid lightgrey;
+  }
+  body section div#form form label {
+    width: 100%;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-top: 8vw;
+    text-align: center;
+  }
+  body section div#form form label span {
+    font-size: 3vw;
+  }
+  body section div#form form label i#eyeOn {
+    bottom: 2.5vw;
+    right: 3vw;
+  }
+  body section div#form form label i#eyeOff {
+    bottom: 2.5vw;
+    right: 3vw;
+  }
+  body section div#form form button {
+    padding: 2vw 6vw;
+    margin-top: 9vw;
+    font-size: 4.5vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+    background-image: linear-gradient(#7898FF, #8E64C5);
+    margin-bottom: 6vw;
+  }
+  body section div#form form a {
+    font-size: 4vw;
+  }
+  body section div#form form::after {
+    width: 2vw;
+  }
+  body section div#form form::before {
+    width: 2vw;
+  }
+  body section div#form div#spinner {
+    display: none;
+  }
+  body section div#form div.spinner {
+    gap: 3vw;
+  }
+  body section div#form div.spinner span#spinner {
+    width: 15vw;
+    height: 15vw;
+    background-color: transparent;
+    border-top: 1.5vw solid #8E64C5;
+    border-bottom: 1.5vw solid #7898FF;
+    border-left: 1.5vw solid #8E64C5;
+    border-right: 1.5vw solid #7898FF;
+  }
+  body section div#form div.spinner span#charging {
+    font-size: 8vw;
+  }
+  body section div#form div#resultRegister {
+    gap: 3vw;
+  }
+  body section div#form div#resultRegister i {
+    font-size: 30vw;
+  }
+  body section div#form div#resultRegister span#successfully {
+    font-size: 8vw;
+  }
+  body section div#info {
+    text-align: center;
+    padding: 15vw 2vw 10vw 2vw;
+  }
+  body section div#info h2 {
+    font-size: 12vw;
+    line-height: 13vw;
+    margin-bottom: 2vw;
+    -webkit-filter: contrast(5);
+            filter: contrast(5);
+  }
+  body section div#info p {
+    font-family: "Roboto";
+    font-size: 5vw;
+    padding: 0vw 4vw;
+    -webkit-filter: contrast(50);
+            filter: contrast(50);
+  }
+  body footer {
+    margin: 10vw 0vw 3vw 0vw;
+    display: block;
+  }
+  body footer p {
+    bottom: 0vw;
+    left: 0;
+    right: 0vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 4vw;
+  }
+  body footer p span {
+    font-size: 4vw;
+    font-weight: 700;
+    color: #8E64C5;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body#tasksPage {
+  all: initial;
+  background-color: #F6F6F6;
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body#tasksPage header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#7898FF), to(#8E64C5));
+  background: linear-gradient(90deg, #7898FF, #8E64C5);
+  -webkit-box-shadow: 0px 3px 5px lightgrey;
+          box-shadow: 0px 3px 5px lightgrey;
+  padding: 0 3em;
+  margin-bottom: 2em;
+  font-size: 1vw;
+}
+
+body#tasksPage header i.mobileMenu {
+  display: none;
+}
+
+body#tasksPage header nav a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .7em 1em;
+  border-bottom: .2em solid white;
+  text-decoration: none;
+  color: white;
+}
+
+body#tasksPage header div.user-info {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body#tasksPage header div.user-info div.userData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body#tasksPage header div.user-info div.userData p {
+  font-size: 1vw;
+  text-transform: capitalize;
+  color: #dfdfdf;
+}
+
+body#tasksPage header div.user-info div.userData i {
+  color: white;
+  margin-left: 0.25vw;
+  margin-bottom: 0.3vw;
+}
+
+body#tasksPage header div.user-info div.userData div.user-image {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: white;
+  opacity: .3;
+  margin-left: 0.7em;
+}
+
+body#tasksPage header div.user-info div.userData div.user-image img {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu {
+  display: none;
+  position: absolute;
+  right: 5vw;
+  background-color: #F2F2F2;
+  border-radius: 5%;
+  z-index: 1000;
+  border: solid 0.1vw #8E64C5;
+  width: 10vw;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu div.image {
+  display: none;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu div.notch {
+  width: 0.6vw;
+  height: 0.6vw;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0.5vw;
+  top: -0.45vw;
+  background-color: #F2F2F2;
+  border-top: solid 0.1vw #8E64C5;
+  border-left: solid 0.1vw #8E64C5;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu ul {
+  border-radius: 5%;
+  padding: 0.5vw 1vw;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  cursor: pointer;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu ul li a {
+  font-size: 0.9vw;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: black;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu ul li i {
+  display: block;
+  font-size: 1.3vw;
+  color: #8E64C5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body#tasksPage header div.user-info div.drop-down-menu ul hr {
+  background: #8E64C5;
+  height: 0.05vw;
+  width: 100%;
+  margin: 0.5vw 0vw;
+}
+
+body#tasksPage main {
+  all: initial;
+  position: relative;
+}
+
+body#tasksPage main section.boardTasks {
+  all: initial;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  padding: 1em;
+  -webkit-box-shadow: 2px 2px 10px lightgrey;
+          box-shadow: 2px 2px 10px lightgrey;
+  border-radius: .2em;
+  z-index: 20;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input[type=text] {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0;
+  padding: .3em;
+  font-size: 1.1em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input:focus {
+  outline: none;
+  border-bottom: 1px solid grey;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input::-webkit-input-placeholder {
+  color: #c5c5c5;
+  text-indent: .2em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input:-ms-input-placeholder {
+  color: #c5c5c5;
+  text-indent: .2em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input::-ms-input-placeholder {
+  color: #c5c5c5;
+  text-indent: .2em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea input::placeholder {
+  color: #c5c5c5;
+  text-indent: .2em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker i, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2em;
+  opacity: 0.6;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker i.warnme, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe i.warnme {
+  font-size: 1.8em;
+  opacity: 0.4;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker input[type=datetime-local], body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe input[type=datetime-local] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0vw;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe {
+  width: 1.8em;
+  height: 1.8em;
+  display: none;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea span.deadline, body#tasksPage main section.boardTasks form.nueva-tarea span.warnline {
+  display: none;
+  margin-left: 0.5em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea span.warnline {
+  margin-left: 0.3em;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea button {
+  height: 2em;
+  width: 2em;
+  background-color: transparent;
+  margin-right: 1em;
+  margin-left: 1em;
+  opacity: .5;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea button:hover {
+  opacity: 1;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea button img {
+  height: 100%;
+  width: 100%;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea .not-done {
+  width: 2em;
+  height: 2em;
+  background-color: #F2F2F2;
+  margin-right: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter {
+  position: absolute;
+  bottom: -1.35vw;
+  right: 7vw;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter, body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort {
+  font-size: 0.8vw;
+  color: #8E64C5;
+  margin-left: 0.3vw;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: solid 1px #8E64C5;
+  top: -0.5vw;
+  right: -5.25vw;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div p {
+  font-size: 0.6vw;
+  color: black;
+  font-weight: 300;
+  padding: 0.25vw 1vw 0.25vw 0.6vw;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div p:hover {
+  background-color: #8E64C5;
+  color: white;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div div.notch {
+  width: 0.6vw;
+  height: 0.6vw;
+  position: absolute;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  left: -0.36vw;
+  top: 0.5vw;
+  background-color: white;
+  z-index: -1;
+  border-top: solid 1px #8E64C5;
+  border-left: solid 1px #8E64C5;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: solid 1px #8E64C5;
+  top: -0.5vw;
+  right: -4.5vw;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div p {
+  font-size: 0.6vw;
+  color: black;
+  font-weight: 300;
+  padding: 0.25vw 1vw 0.25vw 0.6vw;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div p:hover {
+  background-color: #8E64C5;
+  color: white;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div div.notch {
+  width: 0.6vw;
+  height: 0.6vw;
+  position: absolute;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  left: -0.36vw;
+  top: 0.5vw;
+  background-color: white;
+  z-index: -1;
+  border-top: solid 1px #8E64C5;
+  border-left: solid 1px #8E64C5;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  list-style: none;
+  margin: 2em 15% 2em 15%;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.not-done {
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px lightgrey;
+          box-shadow: 2px 2px 5px lightgrey;
+  margin-right: 1em;
+  border: 2px solid #8E64C5;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.not-done i {
+  position: absolute;
+  left: 0.25em;
+  top: 0.3em;
+  color: white;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea:first-child div.not-done::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 4em;
+  width: 2px;
+  background-color: #8E64C5;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea:not(:last-child) div.not-done::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 4.5em;
+  width: 2px;
+  background-color: #8E64C5;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  padding: 1em 2em;
+  -webkit-box-shadow: 2px 2px 5px lightgrey;
+          box-shadow: 2px 2px 5px lightgrey;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea p.nombre {
+  color: #5f5f5f;
+  margin-bottom: 0.2vw;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea p.timestamp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3vw;
+  font-size: .9em;
+  color: #868686;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea p.timestamp i.remainingTimeL {
+  font-size: 1vw;
+}
+
+body#tasksPage main section.boardTasks h2.titulo-terminadas {
+  position: relative;
+  width: 8em;
+  text-align: center;
+  padding: .5em 1em;
+  background-color: white;
+  border-radius: .2em;
+  -webkit-box-shadow: 3px 3px 5px lightgrey;
+          box-shadow: 3px 3px 5px lightgrey;
+  color: #aaaaaa;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-left: calc(15% - 4em);
+  z-index: 20;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  list-style: none;
+  margin: 2em 15%;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5em;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.not-done {
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  -webkit-box-shadow: 2px 2px 5px lightgrey;
+          box-shadow: 2px 2px 5px lightgrey;
+  border: 2px solid #8E64C5;
+  border-radius: 50%;
+  margin-right: 1em;
+  z-index: 2;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  background-color: lightgrey;
+  border-color: grey;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.not-done i {
+  display: none;
+  position: absolute;
+  left: 0.25em;
+  top: 0.3em;
+  color: grey;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.not-done::before {
+  background-color: grey !important;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.not-done::after {
+  background-color: grey !important;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea:first-child div.not-done::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 3em;
+  width: 2px;
+  background-color: grey !important;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea:not(:last-child) div.not-done::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(0.75em - 1px);
+  display: block;
+  height: 4.5em;
+  width: 2px;
+  background-color: grey !important;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e4e4e4;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1em 2em;
+  -webkit-box-shadow: 2px 2px 5px lightgrey;
+          box-shadow: 2px 2px 5px lightgrey;
+  color: grey;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vw;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div p.nombre {
+  color: #5f5f5f;
+  text-decoration: line-through;
+  font-size: 0.9vw;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div i.trashDoneTask {
+  display: none;
+  font-size: 0.8vw;
+  cursor: pointer;
+}
+
+body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea p.timestamp {
+  font-size: .9em;
+  color: #868686;
+  text-decoration: line-through;
+}
+
+body#tasksPage main section.menuTask div.menuTask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5vw 3vw;
+  -webkit-box-shadow: 0 5px 5px lightgrey;
+          box-shadow: 0 5px 5px lightgrey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  padding-bottom: 1vw;
+  gap: 2vw;
+  display: none;
+  position: absolute;
+  width: 25vw;
+  top: 10vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option {
+  color: #7898FF;
+  position: absolute;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option.close {
+  top: 0.5vw;
+  right: 1vw;
+  font-size: 1.2vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option.trash {
+  bottom: 0.5vw;
+  left: 1vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option.save {
+  bottom: 0.5vw;
+  left: 3vw;
+  font-size: 1.4vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option.saved {
+  display: none;
+  color: #01ff01;
+}
+
+body#tasksPage main section.menuTask div.menuTask i.option:hover {
+  color: black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body#tasksPage main section.menuTask div.menuTask i.saved:hover {
+  color: #01ff01;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body#tasksPage main section.menuTask div.menuTask h2 {
+  font-size: 1.4vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin-bottom: -1vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle div.not-done {
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px lightgrey;
+          box-shadow: 2px 2px 5px lightgrey;
+  margin-right: 1em;
+  border: 2px solid #8E64C5;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle div.not-done:hover {
+  background-color: #8E64C5;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle p {
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle input {
+  display: none;
+  height: 1.25vw;
+  padding: 0.4vw 0.5vw;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 0.3vw;
+  font-size: 1vw;
+  font-weight: 100;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskTitle input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate {
+  justify-self: flex-start;
+  width: 100%;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline h3, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate h3 {
+  color: #8E64C5;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.0vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 1em;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker i, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe i, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker i, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5em;
+  opacity: 0.6;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe i.warnme {
+  font-size: 1.8em;
+  opacity: 0.4;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe input[type=datetime-local] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0vw;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+body#tasksPage main section.menuTask div.menuTask div.taskDeadline:hover i.creationDate, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate:hover i.creationDate {
+  color: black;
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+body#tasksPage main section.menuTask div.menuTask p.createdAt {
+  font-weight: 700;
+  margin-top: 1vw;
+  justify-self: flex-end;
+  font-size: 1.0vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask p.createdAt span {
+  color: #8E64C5;
+  -webkit-margin-end: 0.4vw;
+          margin-inline-end: 0.4vw;
+}
+
+body#tasksPage main section.menuTask div.menuTask::after {
+  position: absolute;
+  content: '';
+  width: 0.5vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+}
+
+body#tasksPage main section.menuTask div.menuTask::before {
+  position: absolute;
+  content: '';
+  width: 0.5vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+}
+
+@media (max-width: 800px) {
+  body#tasksPage header {
+    padding: 0 5vw;
+    margin-bottom: 2em;
+    font-size: 5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  body#tasksPage header i.mobileMenu {
+    display: block;
+    color: white;
+    font-size: 7vw;
+  }
+  body#tasksPage header div.user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body#tasksPage header div.user-info div.userData {
+    display: none;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 10vw;
+    top: 8vh;
+    background-color: white;
+    border: solid 0.25vw #8E64C5;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 5vw  0vw 2.5vw 0vw;
+    gap: 8vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu div.image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu div.image img {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu div.image h2 {
+    color: #8E64C5;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu div.notch {
+    display: none;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu ul li {
+    gap: 3vw;
+    cursor: pointer;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 10vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu ul li a {
+    font-size: 5.5vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu ul li i {
+    font-size: 7vw;
+  }
+  body#tasksPage header div.user-info div.drop-down-menu ul hr {
+    background: #8E64C5;
+    height: 0.5vw;
+    width: 75%;
+    margin: 4.5vw 0vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea {
+    margin: 0vw 0vw 0vw 2.5vw;
+    padding: 1em 0em 1em 1em;
+    width: 90vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea input.nombreTarea {
+    width: 50vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.7em;
+    margin-left: 0.5em;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea label.dataPicker i.warnme, body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe i.warnme {
+    font-size: 1.7em;
+    margin-top: 0.1em;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea label.timePickerWarnMe {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea span {
+    display: none;
+    position: absolute;
+    font-size: 0.5em;
+    text-align: center;
+    width: 13vw;
+    top: 1.2vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea span.deadline {
+    right: 23vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea span.warnline {
+    right: 10vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea button {
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    margin: 0em 1em 0em 0em;
+    opacity: .5;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea button:hover {
+    opacity: 1;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea .not-done {
+    display: none;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.5vw;
+    position: absolute;
+    bottom: -18vw;
+    left: 4vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter, body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort {
+    font-size: 5vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div {
+    all: initial;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: solid 1px #8E64C5;
+    top: -3vw;
+    left: 7vw;
+    cursor: none;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div p {
+    font-size: 3vw;
+    color: black;
+    font-weight: 300;
+    padding: 1vw 3vw 1vw 2.5vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div p:hover {
+    background-color: #8E64C5;
+    color: white;
+    cursor: pointer;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.sort div div.notch {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+    left: -1.2vw;
+    top: 4vw;
+    background-color: white;
+    z-index: 100;
+    border-top: solid 1px #8E64C5;
+    border-left: solid 1px #8E64C5;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter {
+    margin-left: -0.5vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div {
+    all: initial;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: solid 1px #8E64C5;
+    top: 5.5vw;
+    left: 7vw;
+    cursor: none;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div p {
+    font-size: 3vw;
+    color: black;
+    font-weight: 300;
+    padding: 1vw 3vw 1vw 2.5vw;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div p:hover {
+    background-color: #8E64C5;
+    color: white;
+    cursor: pointer;
+  }
+  body#tasksPage main section.boardTasks form.nueva-tarea div.sortAndFilter i.filter div div.notch {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+    left: -1.2vw;
+    top: 4vw;
+    background-color: white;
+    z-index: 100;
+    border-top: solid 1px #8E64C5;
+    border-left: solid 1px #8E64C5;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-pendientes {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2em 2.5vw 2em 12.5%;
+    padding-right: 2.5vw;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea {
+    margin-bottom: 1.5em;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.descripcion {
+    padding: 1em 1em 1em 1.5em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 62.5vw;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.descripcion div p.timestamp {
+    gap: 1vw;
+    font-size: .7em;
+    color: #868686;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-pendientes li.tarea div.descripcion i.remainingTimeL {
+    font-size: 1em;
+    margin-right: 0.75vw;
+  }
+  body#tasksPage main section.boardTasks h2.titulo-terminadas {
+    padding: .5em 0.75em;
+    margin-left: 2.5vw;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2em 2.5vw 2em 12.5%;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea {
+    margin-bottom: 1.5em;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion {
+    padding: 1em 1em 1em 1.5em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 62.5vw;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1vw;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div p.nombre {
+    font-size: 1em;
+  }
+  body#tasksPage main section.boardTasks ul.tareas-terminadas li.tarea div.descripcion div i.trashDoneTask {
+    font-size: 1em;
+    position: absolute;
+    display: block;
+    left: 5vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5vw 9vw;
+    -webkit-box-shadow: 0 5px 5px lightgrey;
+            box-shadow: 0 5px 5px lightgrey;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    padding-bottom: 3vw;
+    gap: 7vw;
+    display: none;
+    position: fixed;
+    width: 80vw;
+    top: 30vh;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option {
+    font-size: 5vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option.close {
+    top: 2.5vw;
+    right: 4.5vw;
+    font-size: 4vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option.trash {
+    bottom: 2vw;
+    left: 3.5vw;
+    font-size: 6vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option.save {
+    bottom: 2vw;
+    left: 12vw;
+    font-size: 6vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option.saved {
+    display: none;
+    font-size: 6vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask i.option:hover {
+    color: black;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body#tasksPage main section.menuTask div.menuTask i.saved:hover {
+    color: #01ff01;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  body#tasksPage main section.menuTask div.menuTask h2 {
+    margin-bottom: -1vw;
+    font-size: 1.4em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskTitle div.not-done {
+    position: relative;
+    height: 1.5em;
+    width: 1.5em;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 5px lightgrey;
+            box-shadow: 2px 2px 5px lightgrey;
+    margin-right: 1em;
+    border: 2px solid #8E64C5;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskTitle p {
+    font-size: 1.2em;
+    margin-left: -0.5em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskTitle input {
+    display: none;
+    height: 1.25vw;
+    padding: 0.4vw 0.5vw;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    font-weight: 100;
+    height: 1.25em;
+    padding: 0.4em 0.5em;
+    width: 50vw;
+    font-size: 1.2em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate {
+    justify-self: flex-start;
+    width: 100%;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline h3, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate h3 {
+    font-size: 1em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div {
+    font-size: 1em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker i, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe i, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker i, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    opacity: 0.6;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker i.warnme, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe i.warnme {
+    font-size: 1.8em;
+    opacity: 0.4;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker input[type=datetime-local], body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe input[type=datetime-local] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.dataPicker input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskDeadline div label.timePickerWarnMe input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.dataPicker input[type=datetime-local]::-webkit-calendar-picker-indicator, body#tasksPage main section.menuTask div.menuTask div.taskWarnDate div label.timePickerWarnMe input[type=datetime-local]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0vw;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  body#tasksPage main section.menuTask div.menuTask p.createdAt {
+    font-weight: 700;
+    margin-top: 1vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 0.8em;
+  }
+  body#tasksPage main section.menuTask div.menuTask p.createdAt span {
+    color: #8E64C5;
+    -webkit-margin-end: 0.4vw;
+            margin-inline-end: 0.4vw;
+  }
+  body#tasksPage main section.menuTask div.menuTask::after, body#tasksPage main section.menuTask div.menuTask::before {
+    width: 2vw;
+  }
+}
+
+body#settings {
+  all: initial;
+  background-color: #F6F6F6;
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+  height: 100vh;
+  width: 100vw;
+}
+
+body#settings header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#7898FF), to(#8E64C5));
+  background: linear-gradient(90deg, #7898FF, #8E64C5);
+  -webkit-box-shadow: 0px 3px 5px lightgrey;
+          box-shadow: 0px 3px 5px lightgrey;
+  padding: 0 3em;
+  margin-bottom: 2em;
+  font-size: 1vw;
+}
+
+body#settings header i.mobileMenu {
+  display: none;
+}
+
+body#settings header nav a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .7em 1em;
+  border-bottom: .2em solid white;
+  text-decoration: none;
+  color: white;
+}
+
+body#settings header div.user-info {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body#settings header div.user-info div.userData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body#settings header div.user-info div.userData p {
+  font-size: 1vw;
+  text-transform: capitalize;
+  color: #dfdfdf;
+}
+
+body#settings header div.user-info div.userData i {
+  color: white;
+  margin-left: 0.25vw;
+  margin-bottom: 0.3vw;
+}
+
+body#settings header div.user-info div.userData div.user-image {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.3;
+  margin-left: 0.7em;
+}
+
+body#settings header div.user-info div.userData div.user-image img {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+body#settings header div.user-info div.drop-down-menu {
+  display: none;
+  position: absolute;
+  right: 5vw;
+  background-color: #F2F2F2;
+  border-radius: 5%;
+  z-index: 1000;
+  border: solid 0.1vw #8E64C5;
+  width: 10vw;
+}
+
+body#settings header div.user-info div.drop-down-menu div.image {
+  display: none;
+}
+
+body#settings header div.user-info div.drop-down-menu div.notch {
+  width: 0.6vw;
+  height: 0.6vw;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0.5vw;
+  top: -0.45vw;
+  background-color: #F2F2F2;
+  border-top: solid 0.1vw #8E64C5;
+  border-left: solid 0.1vw #8E64C5;
+}
+
+body#settings header div.user-info div.drop-down-menu ul {
+  border-radius: 5%;
+  padding: 0.5vw 1vw;
+}
+
+body#settings header div.user-info div.drop-down-menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5vw;
+  cursor: pointer;
+}
+
+body#settings header div.user-info div.drop-down-menu ul li a {
+  font-size: 0.9vw;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: black;
+}
+
+body#settings header div.user-info div.drop-down-menu ul li i {
+  display: block;
+  font-size: 1.3vw;
+  color: #8E64C5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body#settings header div.user-info div.drop-down-menu ul hr {
+  background: #8E64C5;
+  height: 0.05vw;
+  width: 100%;
+  margin: 0.5vw 0vw;
+}
+
+body#settings main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3vw;
+  padding: 2.5vw 0vw 0vw 5vw;
+  margin: auto auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body#settings main section.user {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body#settings main section.user div.profilePhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vw;
+  position: relative;
+}
+
+body#settings main section.user div.profilePhoto label {
+  display: none;
+  gap: 0.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7898FF), to(#8E64C5));
+  background-image: linear-gradient(#7898FF, #8E64C5);
+  font-family: "ROBOTO";
+  color: white;
+  padding: 0.5vw 0.5vw;
+  border-radius: 5px;
+  left: 2.3vw;
+  cursor: pointer;
+}
+
+body#settings main section.user div.profilePhoto label input {
+  display: none;
+}
+
+body#settings main section.user div.profilePhoto i.camera {
+  display: none;
+}
+
+body#settings main section.user div.profilePhoto small {
+  display: none;
+  position: absolute;
+  color: red;
+  bottom: -1.5vw;
+  font-style: italic;
+}
+
+body#settings main section.user div.profilePhoto img {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  border: solid 0.3vw #8E64C5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  cursor: pointer;
+}
+
+body#settings main section.user div.profilePhoto div.welcomeUser span {
+  color: #8E64C5;
+  font-size: 3vw;
+  font-weight: 700;
+  font-family: "Roboto";
+  display: block;
+}
+
+body#settings main section.user div.profilePhoto div.welcomeUser p {
+  font-size: 1.9vw;
+  display: block;
+  font-weight: 500;
+}
+
+body#settings main section.userData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2vw 5vw 2vw 0vw;
+  border-radius: 2vw;
+}
+
+body#settings main section.userData div {
+  font-size: 1.1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 10vw;
+}
+
+body#settings main section.userData div h3 {
+  color: black;
+}
+
+body#settings main section.userData div p {
+  font-style: italic;
+}
+
+body#settings main section.userData div div.password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body#settings main section.userData div div.password i {
+  cursor: pointer;
+  font-size: 0.9vw;
+  color: #8E64C5;
+  margin-top: 0vw;
+}
+
+body#settings main section.userData div div.password i#eyeOff {
+  display: none;
+}
+
+body#settings main section.userData hr {
+  background-color: #8E64C5;
+  margin: 0;
+  height: 0.05vw;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  body#settings header {
+    padding: 0 5vw;
+    margin-bottom: 2em;
+    font-size: 5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  body#settings header i.mobileMenu {
+    display: block;
+    color: white;
+    font-size: 7vw;
+  }
+  body#settings header div.user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body#settings header div.user-info div.userData {
+    display: none;
+  }
+  body#settings header div.user-info div.drop-down-menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    right: 10vw;
+    top: 8vh;
+    background-color: white;
+    border: solid 0.25vw #8E64C5;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 5vw  0vw 2.5vw 0vw;
+    gap: 8vw;
+  }
+  body#settings header div.user-info div.drop-down-menu div.image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3vw;
+  }
+  body#settings header div.user-info div.drop-down-menu div.image img {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  body#settings header div.user-info div.drop-down-menu div.image h2 {
+    color: #8E64C5;
+  }
+  body#settings header div.user-info div.drop-down-menu div.notch {
+    display: none;
+  }
+  body#settings header div.user-info div.drop-down-menu ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4vw;
+  }
+  body#settings header div.user-info div.drop-down-menu ul li {
+    gap: 3vw;
+    cursor: pointer;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 10vw;
+  }
+  body#settings header div.user-info div.drop-down-menu ul li a {
+    font-size: 5.5vw;
+  }
+  body#settings header div.user-info div.drop-down-menu ul li i {
+    font-size: 7vw;
+  }
+  body#settings header div.user-info div.drop-down-menu ul hr {
+    background: #8E64C5;
+    height: 0.5vw;
+    width: 75%;
+    margin: 4.5vw 0vw;
+  }
+  body#settings main {
+    gap: 12vw;
+    padding: 5vw 0vw 0vw 5vw;
+  }
+  body#settings main section.user {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body#settings main section.user div.profilePhoto {
+    gap: 3vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  body#settings main section.user div.profilePhoto i.camera {
+    display: block;
+    font-size: 5vw;
+    background-color: grey;
+    padding: 2.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 30vw;
+    right: 4.75vw;
+  }
+  body#settings main section.user div.profilePhoto small {
+    color: red;
+    top: -10vw;
+  }
+  body#settings main section.user div.profilePhoto img {
+    height: 40vw;
+    width: 40vw;
+    border: solid 1vw #8E64C5;
+  }
+  body#settings main section.user div.profilePhoto div.welcomeUser span {
+    font-size: 10vw;
+  }
+  body#settings main section.user div.profilePhoto div.welcomeUser p {
+    font-size: 8vw;
+  }
+  body#settings main section.userData {
+    gap: 4vw;
+    padding: 2vw 5vw 2vw 0vw;
+  }
+  body#settings main section.userData div {
+    font-size: 4.5vw;
+  }
+  body#settings main section.userData div div.password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body#settings main section.userData div div.password i {
+    font-size: 5vw;
+  }
+  body#settings main section.userData hr {
+    height: 0.05vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>sessionStorage.getItem("userToDoToken")? "" : window.location.href = "index.html"</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>ToDo</title>
+</head>
+
+<body id="settings">
+  <header>
+    <nav>
+      <a href="lista-tareas.html">My ToDo's</a>
+    </nav>
+
+    <div class="user-info">
+      <div class="userData">
+        <p></p>
+        <i class="fas fa-sort-down"></i>
+        <div class="user-image">
+          <img src="./assets/profilePhotoDefault.png" alt="Profile Photo" id="userPhoto">
+        </div>
+      </div>
+      
+      
+      <div class="drop-down-menu">
+        <div class="image">
+          <img src="/assets/profilePhotoDefault.png" alt="Profile Photo">
+          <h2 class="userName">Bruce Wayne</h2>
+        </div>
+        <div class="notch"></div>
+        <ul type="none">
+          <li class="settingsAcc">
+            <i class="fas fa-user-circle"></i>
+            <a href="settings.html">Mi Cuenta</a>
+          </li>
+          <hr>
+          <li class="help">
+            <i class="far fa-question-circle"></i>
+            <a href="settings.html">Ayuda</a>
+          </li>
+          <hr>
+          <li class="signOut">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="index.html">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <i class="fas fa-user mobileMenu"></i>
+
+  </header>
+
+  <main>
+    <section class="user">
+      
+      <div class="profilePhoto">
+        <img src="./assets/profilePhotoDefault.png" alt="Profile Photo">
+        <label for="uploadPhoto" class="chooseFile">
+          <i class="fas fa-upload"></i>
+          Subir Foto
+          <input type="file" name="profilePhoto" id="uploadPhoto">
+        </label>
+        <small id="weight">El archivo debe pesar menos de 4Mb</small>
+        <i class="fas fa-camera camera"></i>
+        <div class="welcomeUser">
+          <p></p>
+        </div>
+      </div>
+
+    </section>
+    <section class="userData">
+      <div class="userName">
+        <h3>Usuario:</h3><p>Juan David Rojas Cañizales</p>
+      </div>
+      <hr>
+      <div class="userEmail">
+        <h3>Email:</h3><p>juanrojas@gmail.com</p>
+      </div>
+      <hr>
+      <div class="userPassword">
+        <h3>Password:</h3>
+        <div class="password">
+          <p>*********</p>
+          <i class="fas fa-eye eyeOnSignUpPR" id="eyeOn"></i>
+          <i class="fas fa-eye-slash eyeOffSignUpPR" id="eyeOff"></i>
+        </div>
+      </div>
+      <hr>
+      <div class="userJoined">
+        <h3>Te uniste:</h3><p>27/07/2021</p>
+      </div>
+    </section>
+  </main>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <script src="scripts/crypto.js"></script>
+  <script type="module" src="scripts/cloudinaryAPI.js"></script>
+  <script type="module" src="scripts/myAccount.js"></script>
+</body>
+
+</html>
