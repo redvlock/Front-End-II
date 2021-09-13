@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>sessionStorage.getItem("userToDoToken") ? "" : window.location.href = "index.html"</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="./assets/font/flaticon.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="stylesheet" href="./styles/lista-tareas.css"> -->
+  <title>ToDo</title>
+</head>
+
+<body id="tasksPage">
+  <header>
+    <nav>
+      <a href="#">My ToDo's</a>
+    </nav>
+
+    <div class="user-info">
+      <div class="userData">
+        <p></p>
+        <i class="fas fa-sort-down"></i>
+        <div class="user-image">
+          <img src="./assets/profilePhotoDefault.png" alt="Profile Photo" id="userPhoto">
+        </div>
+      </div>
+      
+      
+      <div class="drop-down-menu">
+        <div class="image">
+          <img src="/assets/profilePhotoDefault.png" alt="Profile Photo">
+          <h2 class="userName">Bruce Wayne</h2>
+        </div>
+        <div class="notch"></div>
+        <ul type="none">
+          <li class="settingsAcc">
+            <i class="fas fa-user-circle"></i>
+            <a href="settings.html">Mi Cuenta</a>
+          </li>
+          <hr>
+          <li class="help">
+            <i class="far fa-question-circle"></i>
+            <a href="settings.html">Ayuda</a>
+          </li>
+          <hr>
+          <li class="signOut">
+            <i class="fas fa-sign-out-alt"></i>
+            <a href="index.html">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <i class="fas fa-user mobileMenu"></i>
+
+  </header>
+  
+  <main>
+    <section class="boardTasks">
+      <div>
+        <form class="nueva-tarea">
+          <div class="not-done"></div>
+          <input class="nombreTarea" type="text" placeholder="Nueva tarea">
+          <label for="datePicker" class="dataPicker">
+            <i class="flaticon-clock deadlineClock"></i>
+            <input type="datetime-local" class="datePicker" name="datePicker" id="datePicker">
+          </label>
+          <span class="deadline"></span>
+          <label for="timePickerWarnMe" class="timePickerWarnMe">
+            <i class="far fa-bell warnme"></i>
+            <input type="datetime-local" class="timePickerWarnMe" name="timePickerWarnMe" id="timePickerWarnMe">
+          </label>
+          <span class="warnline"></span>
+          <button>
+            <img src="./assets/plus.png" alt="Agregar Tarea">
+          </button>
+          <div class="sortAndFilter">
+            <i class="fas fa-hourglass-half sort" style="display: none">
+              <div class="prioridad">
+                <p class="high">Mayor Prioridad</p>
+                <p class="few">Menor Prioridad</p>
+                <div class="notch"></div>
+              </div>
+            </i>
+            <i class="fas fa-filter filter" style="display: none">
+              <div class="filter">
+                <p class="allTasks">Todas</p>
+                <p class="today">Hoy</p>
+                <p class="tomorrow">Mañana</p>
+                <p class="week">Semana</p>
+                <p class="month">Mes</p>
+                <div class="notch"></div>
+              </div>
+            </i>
+          </div>
+        </form>
+    
+        <ul class="tareas-pendientes">
+    
+        </ul>
+    
+        <h2 class="titulo-terminadas">Tareas terminadas</h2>
+        <ul class="tareas-terminadas">
+    
+        </ul>
+      </div>
+    </section>
+  
+    <section class="menuTask">
+      <div class="menuTask">
+        <i class="flaticon-delete trash option"></i>
+        <i class="flaticon-floppy-disk-1 save disk option"></i>
+        <i class="flaticon-check-mark saved save option"></i>
+        <i class="flaticon-cancel close option"></i>
+        <h2>Tarea</h2>
+        <div class="taskTitle">
+          <div class="not-done"></div>
+          <p>Hacer Ejercicio Java</p>
+          <input type="text" name="taskTitle" id=taskTitle>
+        </div>
+        <div class="taskDeadline">
+          <h3>Fecha Limite:</h3>
+          <div>
+            <p>Mar 13 jul, 8:00</p>
+            <label for="datePicker" class="dataPicker">
+              <i class="far fa-calendar-alt creationDate"></i>
+              <input type="datetime-local" class="datePicker" name="datePicker" id="datePicker">
+            </label>
+          </div>
+        </div>
+        <div class="taskWarnDate">
+          <h3>Recordatorio:</h3>
+          <div>
+            <p>2 dias antes</p>
+            <label for="datePicker" class="dataPicker">
+              <i class="far fa-calendar-alt creationDate"></i>
+              <input type="datetime-local" class="datePicker" name="datePicker" id="datePicker">
+            </label>
+          </div>
+        </div>
+        <p class="createdAt"><span>Creada</span>27/08/2021</p>
+      </div>
+    </section>
+
+  </main>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <script src="scripts/crypto.js"></script>
+  <script type="module" src="scripts/cloudinaryAPI.js"></script>
+  <script type="module" src="scripts/tasksPage.js"></script>
+</body>
+
+</html>
