@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cloudinary": "^1.26.2",
+    "cloudinary": "^2.7.0",
     "crypto-js": "^4.0.0"
   }
 }
